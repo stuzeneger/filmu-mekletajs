@@ -7,5 +7,5 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/styles/spinner.scss";
+@use "@/assets/styles/spinner.scss" as *;
 </style>

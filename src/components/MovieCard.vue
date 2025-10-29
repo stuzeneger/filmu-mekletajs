@@ -59,5 +59,5 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/styles/movie_card.scss";
+@use "@/assets/styles/movie_card.scss" as *;
 </style>

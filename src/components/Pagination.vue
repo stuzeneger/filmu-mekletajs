@@ -77,5 +77,5 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/styles/pagination.scss";
+@use "@/assets/styles/pagination.scss" as *;
 </style>

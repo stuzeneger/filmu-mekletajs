@@ -70,5 +70,5 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/styles/info_popup.scss";
+@use "@/assets/styles/info_popup.scss" as *;
 </style>
