@@ -1,0 +1,3 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Spinner.vue > matches snapshot 1`] = `"<div data-v-259be2b2=\\"\\" class=\\"spinner\\"></div>"`;

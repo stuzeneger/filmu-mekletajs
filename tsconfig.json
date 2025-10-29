@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",                // ESNext nodrošina async/await un modernu JS sintaksi
+    "lib": ["ESNext", "DOM"],          // Nodrošina Promise, fetch, DOM API utt.
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true,                    // Pilnīga tipa pārbaude
+    "jsx": "preserve",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",                    // Lai izmantotu "@/..." ceļus
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.vue"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

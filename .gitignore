@@ -16,6 +16,8 @@ coverage
 .eslintcache
 
 #Packages and setings
-/backend/vendors/
+/backend/vendor/
+backend/vendor/
+
 node_modules
 .env
