@@ -85,7 +85,7 @@ export function useMoviesSearcher() {
 
         if (lazyMode.value) {
             await nextTick()
-            initObserver()
+            await initObserver()
         }
     }
 
@@ -98,7 +98,7 @@ export function useMoviesSearcher() {
 
         if (lazyMode.value) {
             await nextTick()
-            initObserver()
+            await initObserver()
         } else {
             disconnectObserver()
         }

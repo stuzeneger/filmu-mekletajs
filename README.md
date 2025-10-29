@@ -1,38 +1,41 @@
-# filmu-mekletajs
+#Palaišanas instrukcija:
 
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Recommended Browser Setup
-
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
+1. Klonēt repozitoriju https://github.com/stuzeneger/filmu-mekletajs (vai izpakot arhīvu)
+2. Backend PHP instalācija:
+2.1.  Direktorijā backend no komandrindas palaist 
+```sh
+composer install
+```
+2.2.  Pārdēvēt .env.example uz .env un ielikt savu OMDb API atslēgu: OMDB_API_KEY=JŪSU_ATSLĒGA
+3. Frontend VUE instalācija:
+3.2.  Komandrindā palaist
 ```sh
 npm install
 ```
-
-### Compile and Hot-Reload for Development
-
+3.3. Komandrindā palaist
 ```sh
-npm run dev
+npm run dev 
+```
+kas palaidīs dev serveri uz http://localhost:5173/ 
+
+#Testi:
+PHP unit testus palaišana no komandrindas:
+Windows:
+```sh
+phpunit --bootstrap vendor/autoload.php tests
+```
+Linux
+```sh
+ ./vendor/bin/phpunit --bootstrap vendor/autoload.php tests
 ```
 
-### Compile and Minify for Production
-
+Vite unit testu palaišana:
 ```sh
-npm run build
-```
+npm run tests
+``` 
+vai ar labo peles izvēlni pa tiešo no PHPStorm
+
+Acceptance testu palaišana no komandrindas
+```sh
+npx playwright test tests/e2e/app.spec.ts
+``` 

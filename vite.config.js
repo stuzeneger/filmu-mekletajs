@@ -3,10 +3,11 @@ import vue from '@vitejs/plugin-vue'
 import { resolve } from 'path'
 
 export default defineConfig({
+  base: '/',
   plugins: [vue()],
   resolve: {
     alias: {
-      '@': resolve(__dirname, 'src'), // @ → src
+      '@': resolve(__dirname, 'src'),
     },
   },
   server: {
@@ -20,8 +21,8 @@ export default defineConfig({
     },
   },
   test: {
-    globals: true,         // ļauj izmantot describe, it, expect bez import
-    environment: 'jsdom',  // nepieciešams Vue komponentu renderēšanai
-    include: ['tests/unit/**/*.test.ts'] // meklēt testus šajā mapē
-  }
+    globals: true,
+    environment: 'jsdom',
+    include: ['tests/unit/**/*.test.ts'],
+  },
 })
